@@ -7,5 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  integrations: [react()]
 });
+// Add any additional Astro configuration here
+import react from '@astrojs/react';

@@ -1,17 +1,37 @@
 ---
+import {FaFacebook, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
 ---
 <footer class="bg-gray-900 text-white py-12">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <!-- Social Links -->
       <div>
         <h4 class="text-2xl font-semibold mb-4">Connect with Us</h4>
-        <div class="flex flex-wrap gap-4 text-sm">
-          <a href="#" class="hover:text-blue-400 transition">Facebook</a>
-          <a href="#" class="hover:text-pink-400 transition">Instagram</a>
-          <a href="#" class="hover:text-sky-400 transition">Twitter</a>
-          <a href="#" class="hover:text-blue-500 transition">LinkedIn</a>
+       <div class="flex space-x-8">
+          <a href="https://www.facebook.com/NepalTekCommunity" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+            <FaFacebook className="h-6 w-6" />
+          </a>
+          <a href="https://www.instagram.com/nepaltekcommunity/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+            <FaInstagram className="h-6 w-6" />
+          </a>
+          <a href="https://twitter.com/NepalTekCom" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+            <FaTwitter className="h-6 w-6" />
+          </a>
+          <a href="https://www.linkedin.com/company/nepaltekcommunity/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+            <FaLinkedin className="h-6 w-6" />
+          </a>
         </div>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-4">Quick Links</h4>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="/" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">Events</a></li>
+          <li><a href="#" class="hover:text-white transition">Stories</a></li>
+          <li><a href="#" class="hover:text-white transition">About</a></li>
+
+        </ul>
       </div>
 
       <!-- Acknowledgement & Contact -->
