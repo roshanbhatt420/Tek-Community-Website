@@ -1,0 +1,79 @@
+---
+const teamMembers = [
+  {
+    name: "Satya  Raj Awasthi",
+    role: "President",
+    image: "/assets/images/logo.png",
+    bio: "Leads the community with vision, energy, and a love for open-source innovation.",
+    linkdin: "https://www.linkedin.com/in/satya-raj-awasthi/",
+    github: "https://github.com/satya-raj-awasthi",
+    instagram: "https://www.instagram.com/_roshan_bhatta/"
+  },
+  {
+    name: "Anisha Shrestha",
+    role: "Vice President",
+    image: "/assets/images/logo.png",
+    bio: "Passionate about community building and women in tech empowerment.",
+    linkdin: "https://www.linkedin.com/in/anisha-shrestha-123456789/",
+    github: "https://github.com/anisha-shrestha",
+    instagram: "https://www.instagram.com/anisha_shrestha/"
+
+  },
+  {
+    name: "Sagar Pandey",
+    role: "Lead – Tech",
+    image: "/assets/images/logo.png",
+    bio: "Full-stack developer mentoring NTK’s coding squads and hackathon teams.",
+    linkdin: "https://www.linkedin.com/in/sagar-pandey-123456789/",
+    github: "https://github.com/sagar-pandey",
+    instagram: "https://www.instagram.com/sagar_pandey/"    
+  },
+  {
+    name: "Priya Adhikari",
+    role: "Lead – Design",
+    image: "/assets/images/logo.png",
+    bio: "Crafts NTK’s brand identity and event visuals with creativity and UX thinking.",
+    linkdin: "https://www.linkedin.com/in/priya-adhikari-123456789/",
+    github: "https://github.com/priya-adhikari",
+    instagram: "https://www.instagram.com/priya_adhikari/"
+
+  },
+];
+import {FaLinkedin, FaGithub, FaInstagram} from 'react-icons/fa';
+---
+
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+    <p class="text-gray-600 text-lg mb-12">
+      The passionate minds behind Nepal Tek Community’s success and innovation.
+    </p>
+
+    <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      {teamMembers.map(member => (
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img 
+            src={member.image} 
+            alt={member.name} 
+            class="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-blue-200"
+          />
+          <h3 class="text-xl font-semibold">{member.name}</h3>
+          <p class="text-blue-600 font-medium mb-2">{member.role}</p>
+          <p class="text-sm text-gray-600">{member.bio}</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href={member.linkdin} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition">
+                    <FaLinkedin class="h-6 w-6" />
+                </a>
+                <a href={member.github} target="_blank" rel="noopener noreferrer" class="
+text-gray-800 hover:text-gray-900 transition">
+                    <FaGithub class="h-6 w-6" />
+                </a>
+                <a href={member.instagram} target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800 transition">
+                    <FaInstagram class="h-6 w-6" />
+                </a>
+            </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

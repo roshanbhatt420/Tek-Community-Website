@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,5 @@ export default defineConfig({
   },
 
   integrations: [react()]
+
 });
-// Add any additional Astro configuration here
-import react from '@astrojs/react';
