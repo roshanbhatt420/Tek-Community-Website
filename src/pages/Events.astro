@@ -1,10 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import done_event from "../components/landing/done_event.astro";
+import featured_event from "../components/landing/featured_event.astro";
+import upcoming_event from "../components/landing/upcoming_event.astro";
 
 ---
 
 <BaseLayout title="Nepal Tek Community - NTK">
-    
-    <alumniPortal />
+    <featured_event />
+    <upcoming_event />
+    <done_event />
 
 </BaseLayout>
